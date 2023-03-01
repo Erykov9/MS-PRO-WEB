@@ -1,0 +1,134 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 124px;
+  z-index: 6;
+
+
+  &_navItems {
+    padding: 15px;
+    display: flex;
+
+    a {
+      font-size: 1.3em;
+      padding: 2px 20px;
+      color: $light-color;
+    }
+
+    a:hover {
+      color: black;
+      background-color: $light-color;
+      border-radius: 5px;
+    }
+  }
+
+  .dropdown {
+    position: relative;
+
+    span {
+      font-size: 1.3em;
+      padding: 2px 20px;
+      color: $light-color;
+      cursor: pointer;
+    }
+
+    span:hover {
+      color: black;
+      background-color: $light-color;
+      border-radius: 5px;
+    }
+
+    &_item {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: -60px;
+      box-shadow: 2px 2px 2px grey;
+      background-color: $light-color;
+      
+      a {
+        padding: 5px;
+        color: $dark;
+      }
+      
+      a:hover {
+        background-color: $semiblue;
+        opacity: 1;
+        border-radius: 0;
+      }
+    }
+  }
+
+  &_navItemsSmall {
+    display:  none;
+  }
+
+  &_navBanner {
+    img {
+      width: 120px;
+    }
+  }
+  
+  &.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.scrolled {
+  background-color: rgb(127, 143, 166,0.7);
+  position: fixed;
+  width: 100%;
+  top:0;
+}
+
+@media (max-width: 768px) {
+  .root {
+    color: $dark;
+    padding: 0 50px;
+
+    &_navItems {
+      display: none;
+    }
+
+    &_navItemsSmall {
+      display: block;
+      color: white;
+    }
+
+    &_navBanner {
+      img {
+        width: 100px;
+      }
+    }
+  }
+  
+  .dropdown {
+    position: relative;
+
+    a {
+      color: $dark;
+    }
+
+    &_item {
+
+      a {
+        padding: 5px;
+        color: $dark;
+      }
+      
+      a:hover {
+        color: $semiblue;
+      }
+    }
+  }
+
+}

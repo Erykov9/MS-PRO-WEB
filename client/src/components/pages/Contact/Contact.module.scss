@@ -1,0 +1,26 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $light;
+  width: 100%;
+  padding-top: 45px;
+
+  img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .root {
+    font-size: 0.7em;
+    padding: 35px 3px;
+
+    img {
+      width: 300px;
+    }
+  }
+}

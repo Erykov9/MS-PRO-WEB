@@ -1,0 +1,18 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  &_nav {
+      background-image: url('../../../../public/uploads/loftfurniture.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .root {
+    &_nav {
+      background-size: auto;
+    }
+  }
+}

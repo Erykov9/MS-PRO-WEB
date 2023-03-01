@@ -1,0 +1,22 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: $semiblue;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 85px;
+  padding: 3px;
+  font-size: 1.2em;
+}
+
+.root:hover {
+  background-color: $semiblue-o;
+  cursor: pointer;
+  a {
+    color: $light;
+    opacity: 0.6;
+  }
+}

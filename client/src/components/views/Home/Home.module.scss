@@ -1,0 +1,69 @@
+@import  '../../../styles/settings.scss';
+
+.root {
+  position: relative;
+  height: 250px;
+  border-bottom: 3px solid black;
+  z-index: 4;
+
+
+  &_circleIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &_item {
+      position: relative;
+      clear: both;
+      content: '';
+      display: table;
+      
+      &_container {
+        display: flex;
+        flex-direction: column-reverse;
+        position: absolute;
+        top: -87px;
+        left: -80px;
+        
+
+        &_text  {
+          text-align: center;
+        }
+
+        &_img {
+          img {
+            width: 175px;
+            height: 175px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid $dark;
+          }
+
+          img:hover {
+            border-color: $light-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  .root {
+    padding-top: 25px;
+    height: 720px;
+
+    &_circleIcons {
+      flex-direction: column;
+      &_item {
+        &_container {
+          position: relative;
+          flex-direction: column-reverse;
+          align-items: center;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}

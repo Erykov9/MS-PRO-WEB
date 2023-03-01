@@ -1,0 +1,42 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  text-align: center;
+  padding: 45px ;
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $light;
+
+  span {
+    font-size: 3em;
+    color: $red;
+  }
+
+  h2 {
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+    &_content {
+      width: 60%;
+      padding-bottom: 45px;
+    }
+
+}
+
+@media (max-width: 768px) {
+  .root {
+    font-size: 0.7em;
+    padding: 35px 3px;
+    
+    &_content {
+      width: 100%;
+    }
+  }
+}

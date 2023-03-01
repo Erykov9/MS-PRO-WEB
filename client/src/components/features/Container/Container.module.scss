@@ -1,0 +1,9 @@
+.root {
+  padding: 0 15vh;
+}
+
+@media (max-width: 768px) {
+  .root {
+    padding: 0 5vh;
+  }
+}

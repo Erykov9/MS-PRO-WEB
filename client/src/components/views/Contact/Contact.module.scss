@@ -1,0 +1,51 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  padding-top: 45px;
+  margin-top: 45px;
+  background-color: $semiblue-o;
+ 
+
+  a {
+    font-size: 1.5em;
+  }
+
+  a:hover {
+    color: $light-color;
+  }
+
+  &_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 25px;
+
+    &_contactSocial {
+      display: flex;
+      flex-direction: column;
+    };
+  }
+
+  p {
+    padding-top: 25px;
+    text-align: center;
+    margin: 0;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+
+  .root {
+    font-size:  0.9em;
+    &_container {
+      flex-direction: column;
+
+      &_contactFooter {
+        padding-bottom: 25px;
+      }
+    }
+  }
+}

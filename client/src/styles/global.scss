@@ -1,0 +1,23 @@
+@import './settings.scss';
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+* {
+  font-family: 'Arsenal', sans-serif;
+
+  a {
+    text-decoration: none;
+    color: $dark;
+  }
+
+  h1, h2, h3, h4, h5 {
+    color: $dark
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
