@@ -69,7 +69,7 @@ const Navigation = ({offert}: any) => {
                   <NavLink to={'/loftfurniture'}><AiOutlineDash/> BALUSTRADY/MEBLE LOFT</NavLink><br/>
                   <NavLink to={'/shelfstairs'}><AiOutlineDash/> SCHODY PÓŁKOWE</NavLink><br/>
                   <NavLink to={'/weldingservice'}><AiOutlineDash/> USŁUGI SPAWALNICZE/PROTOTYPOWNIA</NavLink><br/>
-                  <NavLink to={'/selfmontage'}><AiOutlineDash/> SAMODZIELNY MONTAŻ</NavLink><br/>
+                  <NavLink to={'/selfmontage'}><AiOutlineDash/> STELAŻE SCHODÓW PÓŁKOWYCH</NavLink><br/>
                 </div>
               }
             </div>
@@ -88,7 +88,7 @@ const Navigation = ({offert}: any) => {
                 <NavLink to='/loftfurniture'>BALUSTRADY/MEBLE LOFT</NavLink>
                 <NavLink to='/shelfstairs'>SCHODY PÓŁKOWE</NavLink>
                 <NavLink to={'/weldingservice'}>USŁUGI SPAWALNICZE/PROTOTYPOWNIA</NavLink>
-                <NavLink to={'/selfmontage'}>SAMODZIELNY MONTAŻ</NavLink>
+                <NavLink to={'/selfmontage'}>STELAŻE SCHODÓW PÓŁKOWYCH</NavLink>
               </div>
             }
           </div>

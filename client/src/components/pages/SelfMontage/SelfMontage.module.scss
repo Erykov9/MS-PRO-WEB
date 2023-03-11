@@ -1,8 +1,16 @@
 @import '../../../styles/settings.scss';
 
-img {
-  width: 100vh;
+.modalDiv {
+  &_img {
+    display: flex;
+    img {
+      margin: 0 auto;
+      height: 80vh;
+    }
+  }
+
 }
+
 
 .root {
   text-align: center;
@@ -14,9 +22,17 @@ img {
   flex-direction: column;
   background-color: $light;
 
+  &_line {
+    border-top: 1px solid $dark;
+    padding: 15px;
+  }
+
+
   span {
-    font-size: 3em;
+    font-size: 2.7em;
     color: $red;
+    display:  inline-block;
+    height: 25px;
   }
 
   h2 {
@@ -38,11 +54,31 @@ img {
       &_imgContainer {
         padding-bottom: 45px;
         margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
 
         img {
-          width: 250px;
+          width: 400px;
           cursor: pointer;
           padding: 15px;
+          height: 600px;
+          object-fit: cover;
+          transition: all 0.3s;
+        }
+
+        &_instr {
+          img {
+            object-fit: contain;
+            width: 300px;
+            height: 300px;
+          }
+        }
+
+        img:hover {
+          opacity: 0.8;
         }
       }
     }
@@ -62,6 +98,21 @@ img {
 
     &_content {
       width: 100%;
+
+      &_imgContainer {
+        padding-bottom: 45px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        img {
+          width: 250px;
+          cursor: pointer;
+          padding: 15px;
+        }
+      }
     }
   }
 }
